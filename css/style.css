@@ -1,0 +1,194 @@
+/* UNIVERSAL STYLE */
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+:ROOT {
+    /* --sideback-mainbuttons: #b9cdda;  */
+    --sideback-mainbuttons: #001F3F; 
+    --offwhite-color: #F8F8F2;
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* CONTAINER STYLE */
+
+.container {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: 0.4fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    grid-template-areas: 
+    "sidebar main"
+    "sidebar main";
+}
+
+/* SIDEBAR STYLE */
+
+#sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: sidebar;
+    background-color: var(--sideback-mainbuttons);
+}
+
+img {
+    width: 50%;
+}
+
+h1 {
+    color: var(--offwhite-color);
+    font-family: "Bona Nova SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#add__button {
+    background-color: #A4D3B3;
+    width: 80%;
+    color: #4F4F4F;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: "Bona Nova SC", serif;
+    font-weight:bold;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+
+.form__hidden{
+    display: none;
+}
+.form__show {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    color: var(--offwhite-color);
+    font-size: 18px;
+}
+label {
+    margin-top: 20px;
+    font-family: "Bona Nova SC", serif;
+    font-weight:bold;
+    font-style: normal;
+    margin-top: 20px;
+}
+input {
+    margin-top: 2px;
+    border-radius: 10px;
+    width: 220px;
+    height: 40px;
+}
+
+textarea {
+    margin-top: 2px;
+    border-radius: 10px;
+    width: 220px;
+    height: 60px;
+    padding-top: 6px;
+    padding-left: 2px;
+}
+
+#add__content {
+    background-color: #A4D3B3;
+    width: 100%;
+    color: #4F4F4F;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family: "Bona Nova SC", serif;
+    font-weight:bold;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+/* BOOKS STYLE */
+
+#books {
+    display: flex;
+    flex-wrap: wrap;
+    grid-area: main;
+}
+
+.book__style {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #F5F5F5;
+    justify-content: space-around;
+    width: 20%;
+    height: 40vh;
+    border: 1px solid black;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+    box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75);
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+
+}
+
+p, h4, h2 {
+    color: #3B4F63;
+    font-family: "Funnel Display", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+h2 {
+    font-size: 28px;
+    height: 40pxx;
+    margin: 0;
+}
+
+h4 {
+    font-style: italic;
+    height: 40px;
+    margin: 0;
+}
+p {
+   
+    font-size: 16px;
+    flex-grow: 1;
+    margin: 0;
+    overflow: hidden;
+}
+
+.inside__buttons > button {
+    width: 100%;
+    background-color: var(--sideback-mainbuttons);
+    color: var(--offwhite-color);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: "Bona Nova SC", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.read {
+    background-color: #8eaf9d;
+    color: white;
+
+}
+
+.read > div > button {
+    /* background-color: yellow; */
+    
+}
+
+#delete {
+    background-color: #FF6B6B;
+}
+
+
+
